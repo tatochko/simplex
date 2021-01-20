@@ -36,3 +36,10 @@ li{
   border-style: none;
   cursor: pointer;
 }
+.arrows{
+  animation: slide 2s linear infinite;
+}
+@keyframes slide {
+  0% { opacity:0; transform: translateY(1vw); }	
+  100% { opacity:1; transform: translateY(2vw); }	
+}

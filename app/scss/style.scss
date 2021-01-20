@@ -120,16 +120,21 @@
         text-align: center;
         .title{
             padding-top: 60px;
+            padding-bottom: 40px;
             h2{
-                font-size: 32px;
+                font-size: 38px;
                 font-weight: 100;
             }
-            h3{
-                font-size: 28px;
-                font-weight: 100;
-            }
-            span{
-                color: #FFE800;
+            .sub-title{
+                display: flex;
+                justify-content: space-evenly;
+                h3{
+                    font-size: 32px;
+                    font-weight: 100;
+                }
+                span{
+                    color: #FFE800;
+                }
             }
         }
         form{
@@ -140,11 +145,35 @@
                 &+ input{
                     margin-left: 20px;
                 }
-                width: 500px;
+                width: 650px;
                 background: rgba(255, 255, 255, 0.3);
                 border-radius: 4px;
                 border: 0;
                 padding: 20px;
+            }
+        }
+    }
+}
+
+.block4{
+    .title{
+        text-align: center;
+        h2{
+            font-size: 38px;
+            font-weight: 100;
+        }
+        p{
+            font-size: 28px;
+        }
+    }
+    .items{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding: 20px 0;
+        .item{
+            img{
+                width: 100%;
             }
         }
     }
