@@ -291,7 +291,7 @@
             ul{
                 margin: 0px 5px;
                 li{
-                    h4{
+                    #item-trigger{
                         font-weight: 100;
                         cursor: pointer;
                     }
@@ -312,7 +312,8 @@
                         float: right;
                         //   transform: rotate(90deg);
                     }
-                    ul{
+                    #item-show{
+                        display: none;
                         li{
                             p{
                                 font-size: 16px;
