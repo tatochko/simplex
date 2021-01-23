@@ -1,8 +1,8 @@
 $(function(){
 
 
-    $('#item-trigger').on('click',function() {
-        $(this).find('#item-show').slideToggle();
+    $('.item-trigger').on('click',function() {
+        $(this).next('.item-show').slideToggle();
     });
 
 });

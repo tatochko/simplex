@@ -281,17 +281,20 @@
     .price__inner{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 60px;
         &-item{
             width: 292px;
+            min-height: 580px;
             background: #FFFFFF;
             box-shadow: -1px -1px 30px rgba(0, 0, 0, 0.07), 1px 1px 30px rgba(0, 0, 0, 0.07);
+            position: relative;
             h3{
                 text-align: center;
             }
             ul{
                 margin: 0px 5px;
                 li{
-                    #item-trigger{
+                    .item-trigger{
                         font-weight: 100;
                         cursor: pointer;
                     }
@@ -312,7 +315,7 @@
                         float: right;
                         //   transform: rotate(90deg);
                     }
-                    #item-show{
+                    .item-show{
                         display: none;
                         li{
                             p{
@@ -322,9 +325,91 @@
                     }
                 }
             }
+            .total{
+                text-align: center;
+            }
+            span{
+                padding: 20px;
+            }
+            .btn{
+                position: absolute;
+                bottom: 0;
+                font-size: 18px;
+                padding: 20px !important;
+                left: 50%;
+                margin-bottom: 20px;
+                transform: translate(-50%, 0);
+            }
         }
         &-item:hover{
             box-shadow: 0px 7px 24.3px 2.7px #FFE800;
+        }
+    }
+}
+
+.block9{
+    background-color: #00354B;
+    color: #fff;
+    h2{
+        padding-top: 40px;
+        font-size: 38px;
+        font-weight: 100;
+        text-align: center;
+    }
+    ul{
+        font-size: 28px;
+        padding-bottom: 30px;
+        li{
+            padding: 20px 0;
+            i{
+                padding-right: 20px;
+            }
+            a{
+                color: #009FE4;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #fff;
+    .logo{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        .left{
+            display: flex;
+            ul{
+                + ul{
+                    padding-left: 40px;
+                }
+                li{
+                    padding: 10px 0;
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .right{
+            color: #000;
+            font-size: 24px;
+            ul{
+                li{
+                    padding: 10px 0;
+                    i{
+                        padding-right: 10px;
+                        cursor: pointer;
+                    }
+                    a{
+                        color: #009FE4;
+                    }
+                }
+            }
         }
     }
 }
