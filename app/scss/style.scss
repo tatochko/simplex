@@ -22,6 +22,9 @@
                 }
             }
             .header__top-right{
+                i{
+                    cursor: pointer;
+                }
                 display: flex;
                 .inst{
                     padding-right: 30px
@@ -172,6 +175,12 @@
         justify-content: center;
         padding: 20px 0;
         .item{
+            h3{
+                padding-left: 20px;
+            }
+            ul{
+                padding-left: 20px;
+            }
             img{
                 width: 100%;
             }
@@ -200,6 +209,9 @@
     }
     p{
         font-size: 24px;
+        a{
+            color: #009FE4;
+        }
     }
 }
 
@@ -211,6 +223,11 @@
             padding-top: 40px;
             font-size: 38px;
             font-weight: 100;
+        }
+        p{
+            a{
+                color: #009FE4;
+            }
         }
     }
     .inner{
@@ -284,7 +301,6 @@
         padding-bottom: 60px;
         &-item{
             width: 292px;
-            min-height: 580px;
             background: #FFFFFF;
             box-shadow: -1px -1px 30px rgba(0, 0, 0, 0.07), 1px 1px 30px rgba(0, 0, 0, 0.07);
             position: relative;
@@ -331,14 +347,13 @@
             span{
                 padding: 20px;
             }
-            .btn{
-                position: absolute;
-                bottom: 0;
-                font-size: 18px;
-                padding: 20px !important;
-                left: 50%;
-                margin-bottom: 20px;
-                transform: translate(-50%, 0);
+            .btn-cont{
+                position: relative;
+                .btn{
+                    font-size: 18px;
+                    padding: 20px !important;
+                    margin: 29px;
+                }
             }
         }
         &-item:hover{
