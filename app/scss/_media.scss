@@ -43,6 +43,41 @@
             }
         }
     }
+    .block4{
+        .container{
+            .title{
+                h2{
+                    font-size: 34px;
+                }
+                P{
+                    font-size: 22px;
+                }
+            }
+            .items{
+                .item{
+                    h3{
+                        font-size: 18px;
+                    }
+                    ul{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .block6{
+        .container{
+            .title{
+                padding-top: 0;
+            }
+            .inner{
+                &-items{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 700px){
@@ -81,6 +116,32 @@
     }
 }
 
+@media (max-width: 700px){
+    .block4{
+        .container{
+            .title{
+                h2{
+                    font-size: 28px;
+                }
+                P{
+                    font-size: 18px;
+                }
+            }
+            .items{
+                .item{
+                    h3{
+                        font-size: 16px;
+                        padding-bottom: 5px;
+                    }
+                    ul{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 620px){
     .block3{
         .container{
@@ -102,12 +163,37 @@
                 }
             }
             form{
+                display: block;
                 input{
+                    + input{
+                        margin-left: 0;
+                    }
+                    width: 200px;
                     padding: 10px;
                 }
             }
             .btn{
                 font-size: 16px;
+            }
+        }
+    }
+    .block5{
+        .container{
+            h2{
+                font-size: 28px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .sub-title{
+                h3{
+                    font-size: 16px;
+                }
+                a{
+                    img{
+                        width: 40px;
+                    }
+                }
             }
         }
     }
@@ -144,6 +230,117 @@
                 .item{
                     display: block;
                 }
+            }
+        }
+    }
+    .block4{
+        .container{
+            .title{
+                h2{
+                    font-size: 24px;
+                }
+                P{
+                    font-size: 16px;
+                }
+            }
+            .items{
+                grid-template-columns: auto;
+                .item{
+                    padding-bottom: 15px;
+                }
+                #block4-1{
+                    order: 1;
+                }
+                #block4-2{
+                    order: 2;
+                }
+                #block4-3{
+                    order: 4;
+                }
+                #block4-4{
+                    order: 3;
+                }
+                #block4-5{
+                    order: 5;
+                }
+                #block4-6{
+                    order: 6;
+                }
+                #block4-7{
+                    order: 8;
+                }
+                #block4-8{
+                    order: 7;
+                }
+                #block4-9{
+                    order: 9;
+                }
+                #block4-10{
+                    order: 10;
+                }
+            }
+        }
+    }
+    .block6{
+        .container{
+            .title{
+                h2{
+                    font-size: 32px;
+                }
+            }
+            .inner{
+                p{
+                    font-size: 16px;
+                }
+            }
+            span{
+                font-size: 16px;
+            }
+            .sub-title{
+                p{
+                    padding: 0;
+                }
+                ul{
+                    font-size: 14px;
+                    li{
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 452px){
+    .block3{
+        .container{
+            .title{
+                padding-top: 10px;
+                padding-bottom: 0;
+                h2{
+                    font-size: 24px;
+                }
+                .sub-title{
+                    h3{
+                        font-size: 16px;
+                    }
+                    a{
+                        img{
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+            form{
+                display: block;
+                input{
+                    + input{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .btn{
+                padding: 10px;
             }
         }
     }
