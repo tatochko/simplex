@@ -466,6 +466,20 @@
             }
         }
     }
+    .block9{
+        .container{
+            ul{
+                font-size: 12px;
+                li{
+                    a{
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 400px){
